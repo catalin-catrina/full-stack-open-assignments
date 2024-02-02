@@ -1,0 +1,9 @@
+sequenceDiagram
+    Browser->>+Web Server: get https//studies.cs.helsinki.fi/exampleapp/spa
+    Web Server-->>-Browser: html document
+    Browser->>+Web Server: get main.css
+    Web Server-->>-Browser: css file
+    Browser->>+Web Server: get spa.js
+    Web Server-->>-Browser: javascript file
+    Browser->>+Web Server: get data.json
+    Web Server-->>-Browser: json file

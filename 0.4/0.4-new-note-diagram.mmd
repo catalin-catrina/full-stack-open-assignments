@@ -1,0 +1,11 @@
+sequenceDiagram
+    Browser->>+Web Server: http post @ http//studies.cs.helsinki.fi/exampleapp/new_note
+    Web Server-->>-Browser: status code 302 @ redirect to same /notes url === refresh
+    Browser->>+Web Server: http get /notes
+    Web Server-->>-Browser: html document
+    Browser->>+Web Server: http get main.css
+    Web Server-->>-Browser: css file
+    Browser->>+Web Server: http get main.js
+    Web Server-->>-Browser: javascript file
+    Browser->>+Web Server: http get data.json
+    Web Server-->>-Browser: json file
